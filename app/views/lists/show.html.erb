@@ -2,7 +2,7 @@
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
     <li><%= "#{Movie.find(bookmark.movie_id).title} - #{bookmark.comment}" %><%= link_to "Delete",
-  list_bookmark_path(bookmark),
+  bookmark_path(bookmark),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %></li>
   <% end %>
