@@ -11,7 +11,20 @@
   </head>
 
   <body>
-    <h1>Watch List</h1>
+  <div class="navbar-lewagon d-flex">
+    <div class="d-flex align-items-center">
+      <%= image_tag "Popcorn.png", alt: "Watch List Logo", class:"logo"  %>
+      <h1 class="fw-bold">Watch List</h1>
+    </div>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-outline-dark me-2 rounded-pill border border-2 shadow-sm">My Lists</button>
+      <button class="btn btn-outline-dark me-2 rounded-pill border border-2 shadow-sm">New Lists</button>
+    </div>
+  </div>
+  <div class="banner">
+    <h2 class="text-shadow">Make lists of your favourite movies</h2>
+    <p class="text-shadow"><em>Sunday Scaries, RomComs etc...</em></p>
+  </div>
     <%= yield %>
   </body>
 </html>
